@@ -10,13 +10,13 @@ const codes = [
   "b",
   "a"
 ];
-const cody = document.querySelector('body');
+
 let index = 0;
 
 function init(){
   
 
-cody.addEventListener('keydown',function pressDown(e) {
+document.body.addEventListener('keydown',function pressDown(e) {
   const key = e.key;
   if (key=== codes[index]){
     index++;
@@ -29,6 +29,6 @@ cody.addEventListener('keydown',function pressDown(e) {
     index = 0;
   }
 });
-}
-init();
+
+
 
