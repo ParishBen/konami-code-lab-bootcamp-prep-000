@@ -13,14 +13,14 @@ const codes = [
 const cody = document.querySelector('body');
 let index = 0;
 
-function init(e){
-  const key = e.key;
+function init(){
+  
 
-}
-cody.addEventListener('keydown',function init(e) {
+cody.addEventListener('keydown',function pressDown(e) {
   const key = e.key;
   if (key=== codes[index]){
     index++;
+    
   if (index=== codes.length){
     alert("YES! CODE ACCEPTED!");
       index= 0;
@@ -29,4 +29,6 @@ cody.addEventListener('keydown',function init(e) {
     index = 0;
   }
 });
+}
+init();
 
