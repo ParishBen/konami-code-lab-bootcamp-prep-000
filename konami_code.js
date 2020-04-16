@@ -16,7 +16,7 @@ let index = 0;
 function init(){
   
 
-document.body.addEventListener('keydown',function (e) {
+document.body.addEventListener('keydown',function touchDown(e) {
   const key = e.key;
   if (key=== codes[index]){
     index++;
