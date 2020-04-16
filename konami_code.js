@@ -14,9 +14,9 @@ const codes = [
 let index = 0;
 
 function init(){
-  
+  var cody = document.querySelector('body');
 
-document.body.addEventListener('keydown',function touchDown(e) {
+cody.addEventListener('keydown',function touchDown(e) {
   const key = e.key;
   if (key=== codes[index]){
     index++;
