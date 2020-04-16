@@ -22,7 +22,7 @@ document.body.addEventListener('keydown',function (e) {
     index++;
     
   if (index=== codes.length){
-    alert("YES! CODE ACCEPTED!");
+    alert("Hurray!");
       index= 0;
     }
   } else {
