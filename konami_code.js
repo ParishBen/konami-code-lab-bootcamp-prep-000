@@ -16,7 +16,7 @@ let index = 0;
 function init(){
   
 
-document.body.addEventListener('keydown',function pressDown(e) {
+document.body.addEventListener('keydown',function (e) {
   const key = e.key;
   if (key=== codes[index]){
     index++;
@@ -28,7 +28,7 @@ document.body.addEventListener('keydown',function pressDown(e) {
   } else {
     index = 0;
   }
-});
-
+}, false);
+}
 
 
