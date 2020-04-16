@@ -10,7 +10,23 @@ const codes = [
   "b",
   "a"
 ];
+const cody = document.querySelector('body');
+let index = 0;
 
-function init() {
-  // your code here
+function init(e){
+  const key = e.key;
+
 }
+cody.addEventListener('keydown',function init(e) {
+  const key = e.key;
+  if (key=== codes[index]){
+    index++;
+  if (index=== codes.length){
+    alert("YES! CODE ACCEPTED!");
+      index= 0;
+    }
+  } else {
+    index = 0;
+  }
+});
+
